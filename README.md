@@ -1,7 +1,7 @@
 # Data Scientist
 
 ## Education
-- M.D., Medicine | Zonguldak Bulent Ecevit University, (_December 2014_)
+- M.D., Medicine | Zonguldak Bulent Ecevit University (_December 2014_)
 
 ## Work Experience
 **Data Scientist @ Molcure (_October 2022 - Present_)**
