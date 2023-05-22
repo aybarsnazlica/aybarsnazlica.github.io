@@ -1,10 +1,16 @@
 # Data Scientist
 
 ## Education
-M.D., Medicine | Zonguldak Bulent Ecevit University (_December 2014_)
+M.D., Medicine | Zonguldak Bulent Ecevit University (_2014_)
 
 ## Work Experience
-Data Scientist @ MOLCURE (_October 2022 - Present_)
+Data Scientist @ MOLCURE (_2022 - Present_)
+
+Research Assistant @ Genome Informatics Laboratory, Osaka University (_2018 - 2022_)
+
+Physician @ Family Medicine Department, Canakkale Onsekiz Mart University Hospital (_2017_)
+
+Physician @ Emergency Department, Gelibolu State Hospital (_2015 - 2016_)
 
 ## Publications
 1. Standley DM, Nakanishi T, Xu Z, Haruna S, Li S, **Nazlica SA**, Katoh K. The evolution of structural genomics. Biophysical Reviews. 2022 Dec 15:1-7.
