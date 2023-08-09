@@ -1,8 +1,8 @@
 # Ph.D. Student
 
 ## Education
- Ph.D., Computational Biology | Western University (_2023 - Present_)
- 
+Ph.D., Computational Biology | Western University (_2023 - Present_)
+
 M.D., Medicine | Zonguldak Bulent Ecevit University (_2008 - 2014_)
 
 ## Work Experience
