@@ -1,9 +1,13 @@
-# Data Scientist
+# Ph.D. Student
 
 ## Education
-M.D., Medicine | Zonguldak Bulent Ecevit University (_2014_)
+Ph.D., Computational Biology | Western University (_2023 - 2027_)
+
+M.D., Medicine | Zonguldak Bulent Ecevit University (_2008 - 2014_)
 
 ## Work Experience
+Research Assistant @ Dumeaux Lab, Western University (_2023 - Present_)
+
 Data Scientist @ MOLCURE (_2022 - Present_)
 
 Research Assistant @ Genome Informatics Laboratory, Osaka University (_2018 - 2022_)
