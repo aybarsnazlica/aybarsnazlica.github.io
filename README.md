@@ -14,9 +14,9 @@ Data Scientist @ MOLCURE (_2022 - Present_)
 
 Research Assistant @ Genome Informatics Laboratory, Osaka University (_2018 - 2022_)
 
-Physician @ Family Medicine Department, Canakkale Onsekiz Mart University Hospital (_2017_)
+Physician @ Department of Family Medicine, Canakkale Onsekiz Mart University Hospital (_2017_)
 
-Physician @ Emergency Department, Gelibolu State Hospital (_2015 - 2016_)
+Physician @ Department of Emergency, Gelibolu State Hospital (_2015 - 2016_)
 
 ## Publications
 
