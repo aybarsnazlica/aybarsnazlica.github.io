@@ -1,12 +1,11 @@
 # Ph.D. Student
 
 ## Education
-Computational Biology (Ph.D.)  @ Western University (_2023 - Present_)
+Bioinformatics (Ph.D.)  @ Western University (_2023 - Present_)
 
 Medicine (M.D.) @ Zonguldak Bulent Ecevit University (_2008 - 2014_)
 
 ## Work Experience
-Research Assistant @ Dumeaux Lab, Western University (_2023 - Present_)
 
 Data Scientist @ MOLCURE (_2022 - Present_)
 
