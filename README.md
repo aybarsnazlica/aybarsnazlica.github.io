@@ -10,7 +10,7 @@ Bioinformatician @ MOLCURE (_2023 - Present_)
 
 Data Scientist @ MOLCURE (_2022 - 2023_)
 
-Research Assistant @ Bioinformatics, Schulich School of Medicine & Dentistry, Western University (_2023 - 2023_)
+Research Assistant @ Bioinformatics, Schulich School of Medicine & Dentistry, Western University (_2023 - 2024_)
 
 Research Assistant @ Genome Informatics, Research Institute for Microbial Diseases, Osaka University (_2018 - 2022_)
 
