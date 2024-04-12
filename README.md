@@ -1,15 +1,18 @@
-# Ph.D. Student
+# Bioinformatician
 
 ## Education
-Bioinformatics (Ph.D.)  @ Western University (_2023 - Present_)
 
 Medicine (M.D.) @ Zonguldak Bulent Ecevit University (_2008 - 2014_)
 
 ## Work Experience
 
-Data Scientist @ MOLCURE (_2022 - Present_)
+Bioinformatician @ MOLCURE (_2023 - Present_)
 
-Research Assistant @ Genome Informatics Laboratory, Osaka University (_2018 - 2022_)
+Data Scientist @ MOLCURE (_2022 - 2023_)
+
+Research Assistant @ Bioinformatics, Schulich School of Medicine & Dentistry, Western University (_2023 - 2023_)
+
+Research Assistant @ Genome Informatics, Research Institute for Microbial Diseases, Osaka University (_2018 - 2022_)
 
 Physician @ Family Medicine, Canakkale Onsekiz Mart University Hospital (_2017_)
 
