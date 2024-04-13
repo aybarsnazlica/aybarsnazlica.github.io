@@ -14,7 +14,7 @@ Research Assistant @ Bioinformatics, Schulich School of Medicine & Dentistry, We
 
 Research Assistant @ Genome Informatics, Research Institute for Microbial Diseases, Osaka University (_2018 - 2022_)
 
-Physician @ Family Medicine, Canakkale Onsekiz Mart University Hospital (_2017_)
+Physician @ Family Medicine, Canakkale Onsekiz Mart University Hospital (_2017 - 2017_)
 
 Physician @ Emergency Medicine, Gelibolu State Hospital (_2015 - 2016_)
 
