@@ -1,4 +1,4 @@
-# Bioinformatician
+# Data Scientist
 
 ## Education
 
@@ -6,9 +6,7 @@ Medicine (M.D.) @ Zonguldak Bulent Ecevit University (_2008 - 2014_)
 
 ## Work Experience
 
-Bioinformatician @ MOLCURE (_2023 - Present_)
-
-Data Scientist @ MOLCURE (_2022 - 2023_)
+Data Scientist @ MOLCURE (_2022 - Present_)
 
 Research Assistant @ Bioinformatics, Schulich School of Medicine & Dentistry, Western University (_2023 - 2024_)
 
