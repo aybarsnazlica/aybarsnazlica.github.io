@@ -11,6 +11,6 @@ struct VersionInfo: HTML {
     var body: some HTML {
         Text("© \(Date.now.formatted(.dateTime.year())) Aybars Nazlica")
             .horizontalAlignment(.center)
-            .foregroundStyle(.gray)
+            .foregroundStyle(.darkGray)
     }
 }

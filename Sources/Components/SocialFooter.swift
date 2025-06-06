@@ -9,11 +9,13 @@ import Ignite
 
 struct SocialFooter: HTML {
     let icons = [
-        Image(systemName: "github", description: "My GitHub Overview Page")
+        Image(systemName: "github", description: "My GitHub Overview Page"),
+        Image(systemName: "linkedin", description: "My Linkedin Page")
     ]
 
     let urlStrings = [
-        "https://github.com/aybarsnazlica"
+        "https://github.com/aybarsnazlica",
+        "https://www.linkedin.com/in/aybars-nazlica/",
     ]
 
     var body: some HTML {
@@ -21,7 +23,6 @@ struct SocialFooter: HTML {
             HStack {
                 ForEach(zip(icons, urlStrings)) { (icon, urlString) in
                     Link(icon, target: urlString)
-                        .role(.secondary)
                         .target(.blank)
                         .relationship(.noOpener, .noReferrer)
                 }

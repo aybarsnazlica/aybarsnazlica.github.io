@@ -15,6 +15,6 @@ struct NavBar: HTML {
         .navigationItemAlignment(.trailing)
         .navigationBarStyle(.light)
         .position(.fixedTop)
-        .background(.hudsonYellow)
+        .background(.init(hex: "#FFD100"))
     }
 }

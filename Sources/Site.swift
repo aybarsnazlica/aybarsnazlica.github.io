@@ -24,4 +24,7 @@ struct MySite: Site {
 
     var homePage = Home()
     var layout = MainLayout()
+
+    var lightTheme: (any Theme)? = LightTheme()
+    var darkTheme: (any Theme)? = DarkTheme()
 }

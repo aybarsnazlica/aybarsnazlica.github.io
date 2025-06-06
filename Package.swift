@@ -11,7 +11,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "IgniteStarter",
+            name: "MyWebsite",
             dependencies: ["Ignite"]),
     ]
 )

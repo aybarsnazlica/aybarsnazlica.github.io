@@ -9,7 +9,9 @@ struct MainLayout: Layout {
 
             content
                 .padding(.bottom, .xLarge)
-
+            
+            Divider()
+            
             Section {
                 SocialFooter()
                 IgniteFooter()
