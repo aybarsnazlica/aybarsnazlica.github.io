@@ -3,23 +3,22 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
-    private let bio = """
-        I'm a data scientist at Molcure Inc. in Japan.
+    var bio = """
+        I'm **Aybars Nazlica**, a data scientist at Molcure Inc. in Japan.
         """
 
     var body: some HTML {
-        Text("Aybars Nazlica")
-            .font(.title1)
-            .fontWeight(.bold)
-            .margin(.top)
-
-        Text(markdown: bio)
-            .fontWeight(.medium)
+        NavBar()
+            .margin(.bottom, .xLarge)
+        
+        Text("Hello 👋")
             .font(.lead)
+            .fontWeight(.medium)
+        
+        Text(markdown: bio)
+            .font(.lead)
+            .fontWeight(.medium)
             .lineSpacing(1.25)
-            .margin(.top, .xLarge)
-
-        Text("© 2025 Aybars Nazlica")
-            .margin(.top, .xLarge)
+            .margin(.bottom, .xLarge)
     }
 }
