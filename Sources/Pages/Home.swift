@@ -21,7 +21,7 @@ struct Home: StaticPage {
             .lineSpacing(1.25)
             .margin(.bottom, .xLarge)
 
-        Text("My Projects")
+        Text("My Projects ↯")
 
         let cards = [
             Card {

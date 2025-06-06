@@ -24,6 +24,7 @@ struct SocialFooter: HTML {
                 ForEach(zip(icons, urlStrings)) { (icon, urlString) in
                     Link(icon, target: urlString)
                         .target(.blank)
+                        .role(.secondary)
                         .relationship(.noOpener, .noReferrer)
                 }
             }
