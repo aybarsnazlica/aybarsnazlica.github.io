@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "IgniteStarter",
+    name: "MyWebsite",
     platforms: [.macOS(.v13)],
     dependencies: [
         .package(url: "https://github.com/twostraws/Ignite.git", branch: "main")
