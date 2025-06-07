@@ -21,27 +21,32 @@ struct Home: StaticPage {
             .lineSpacing(1.25)
             .margin(.bottom, .xLarge)
 
-        Text("My Projects ↯")
-
-        let cards = [
-            Card {
-                Link(
-                    Image(systemName: "terminal", description: "PixelateCLI")
-                        .font(.system(size: 100))
-                        .foregroundStyle(.tomato),
-                    target: "https://github.com/aybarsnazlica/PixelateCLI"
-                )
-            } header: {
-                "PixelateCLI"
-            }
+        Text("My Projects")
+            .font(.lead)
             .fontWeight(.semibold)
+
+        let projects = [
+            (   "PixelateCLI",
+                Image(systemName: "terminal", description: "PixelateCLI")
+                    .font(.system(size: 80))
+                    .foregroundStyle(.tomato),
+                "https://github.com/aybarsnazlica/PixelateCLI"
+            ),
         ]
 
-        Grid(alignment: .leading) {
-            ForEach(cards) { card in
-                card
-                    .frame(maxWidth: 150)
+        VStack {
+            HStack {
+                ForEach(projects) { (name, image, urlString) in
+                    image
+                    
+                    Link(name, target: urlString)
+                        .target(.blank)
+                        .role(.secondary)
+                        .relationship(.noOpener, .noReferrer)
+                }
             }
         }
+        .margin(.top, .xLarge)
+        .font(.lead)
     }
 }
