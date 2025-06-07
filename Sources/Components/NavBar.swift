@@ -9,7 +9,9 @@ import Ignite
 
 struct NavBar: HTML {
     var body: some HTML {
-        NavigationBar(logo: "┏ʕ •`ᴥ•´ʔ┛✧") {
+        NavigationBar(
+            logo: Image("/images/logo.svg", description: "My logo")
+        ) {
 
         }
         .navigationItemAlignment(.trailing)
