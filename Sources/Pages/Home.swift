@@ -22,19 +22,21 @@ struct Home: StaticPage {
             .fontWeight(.semibold)
 
         let projects = [
-            (   "PixelateCLI",
+            (
+                "PixelateCLI",
                 Image(systemName: "terminal", description: "PixelateCLI")
+                    .resizable()
                     .font(.system(size: 80))
                     .foregroundStyle(.tomato),
                 "https://github.com/aybarsnazlica/PixelateCLI"
-            ),
+            )
         ]
 
         VStack(alignment: .leading) {
             HStack {
                 ForEach(projects) { (name, image, urlString) in
                     image
-                    
+
                     Link(name, target: urlString)
                         .target(.blank)
                         .role(.secondary)
