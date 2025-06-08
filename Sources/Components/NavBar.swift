@@ -10,7 +10,7 @@ import Ignite
 struct NavBar: HTML {
     var body: some HTML {
         NavigationBar(
-            logo: Image("/images/logo.svg", description: "My logo")
+            logo: Image("/images/logo.svg", description: "My logo").resizable()
         ) {
         }
         .navigationItemAlignment(.trailing)
