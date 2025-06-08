@@ -9,11 +9,13 @@ import Ignite
 
 struct SocialFooter: HTML {
     let icons = [
+        Image(systemName: "envelope", description: "My Email"),
         Image(systemName: "github", description: "My GitHub Overview Page"),
         Image(systemName: "linkedin", description: "My Linkedin Page")
     ]
 
     let urlStrings = [
+        "mailto:aybarsnazlica@gmail.com",
         "https://github.com/aybarsnazlica",
         "https://www.linkedin.com/in/aybars-nazlica/",
     ]

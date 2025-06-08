@@ -12,7 +12,6 @@ struct NavBar: HTML {
         NavigationBar(
             logo: Image("/images/logo.svg", description: "My logo")
         ) {
-
         }
         .navigationItemAlignment(.trailing)
         .navigationBarStyle(.light)

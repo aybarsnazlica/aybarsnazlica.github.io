@@ -4,16 +4,12 @@ import Ignite
 struct Home: StaticPage {
     var title = "Home"
     var bio = """
-        I'm **Aybars Nazlica**, a data scientist at Molcure Inc. in Japan.
+        Hi! I'm **Aybars**, a data scientist at Molcure, Japan.
         """
 
     var body: some HTML {
         NavBar()
             .margin(.bottom, .xLarge)
-
-        Text("Hello 👋")
-            .font(.lead)
-            .fontWeight(.medium)
 
         Text(markdown: bio)
             .font(.lead)
@@ -34,7 +30,7 @@ struct Home: StaticPage {
             ),
         ]
 
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 ForEach(projects) { (name, image, urlString) in
                     image
@@ -46,7 +42,6 @@ struct Home: StaticPage {
                 }
             }
         }
-        .margin(.top, .xLarge)
         .font(.lead)
     }
 }
