@@ -4,7 +4,7 @@ import Ignite
 struct Home: StaticPage {
     var title = "Home"
     var bio = """
-        Hi! I'm **Aybars**, a data scientist at Molcure, Japan.
+        Hi! I'm **Aybars**, I develop apps for iOS and macOS.
         """
 
     var body: some HTML {
@@ -23,24 +23,34 @@ struct Home: StaticPage {
 
         let projects = [
             (
-                "PixelateCLI",
-                Image(systemName: "terminal", description: "PixelateCLI")
+                "Pixelate",
+                Image(systemName: "image", description: "Pixelate")
                     .resizable()
                     .font(.system(size: 80))
                     .foregroundStyle(.tomato),
-                "https://github.com/aybarsnazlica/PixelateCLI"
-            )
+                "https://github.com/aybarsnazlica/Pixelate"
+            ),
+            (
+                "Splay",
+                Image(systemName: "window-stack", description: "Splay")
+                    .resizable()
+                    .font(.system(size: 80))
+                    .foregroundStyle(.lightBlue),
+                "https://github.com/aybarsnazlica/Splay"
+            ),
         ]
 
         VStack(alignment: .leading) {
             HStack {
                 ForEach(projects) { (name, image, urlString) in
-                    image
-
-                    Link(name, target: urlString)
-                        .target(.blank)
-                        .role(.secondary)
-                        .relationship(.noOpener, .noReferrer)
+                    Card {
+                        image
+                            .margin(.medium)
+                        Link(name, target: urlString)
+                            .target(.blank)
+                            .role(.secondary)
+                            .relationship(.noOpener, .noReferrer)
+                    }
                 }
             }
         }
