@@ -16,7 +16,7 @@ struct IgniteWebsite {
 
 struct MySite: Site {
     var name = "Aybars Nazlica"
-    var titleSuffix = " – Portfolio/Blog"
+    var titleSuffix = " – Aybars Nazlica"
     var url = URL(static: "https://aybarsnazlica.github.io")
     var builtInIconsEnabled = true
 

@@ -38,6 +38,14 @@ struct Home: StaticPage {
                     .foregroundStyle(.lightBlue),
                 "https://github.com/aybarsnazlica/Splay"
             ),
+            (
+                "compseq",
+                Image(systemName: "card-text", description: "compseq")
+                    .resizable()
+                    .font(.system(size: 80))
+                    .foregroundStyle(.sandyBrown),
+                "https://github.com/aybarsnazlica/compseq"
+            ),
         ]
 
         VStack(alignment: .leading) {
