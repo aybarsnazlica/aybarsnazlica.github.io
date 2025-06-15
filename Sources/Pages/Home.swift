@@ -3,23 +3,30 @@ import Ignite
 
 struct Home: StaticPage {
     var title = "Home"
-    var bio = """
-        Hi! I'm **Aybars**, I develop apps for iOS and macOS.
+    var intro = "Hi! I'm **Aybars**!"
+    var summary = """
+        I like developing mobile, desktop and command-line apps. I currently live in Hokkaido, Japan.
         """
-
     var body: some HTML {
         NavBar()
             .margin(.bottom, .xLarge)
 
-        Text(markdown: bio)
+        Text(markdown: intro)
+            .font(.title4)
+            .fontWeight(.medium)
+            .lineSpacing(1.25)
+            .margin(.bottom, .xLarge)
+
+        Text(markdown: summary)
             .font(.lead)
             .fontWeight(.medium)
             .lineSpacing(1.25)
             .margin(.bottom, .xLarge)
 
-        Text("My Projects")
+        Text("Here are the projects I've been working on ↓")
             .font(.lead)
             .fontWeight(.semibold)
+            .margin(.bottom, .xLarge)
 
         let projects = [
             (
