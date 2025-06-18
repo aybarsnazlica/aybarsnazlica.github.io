@@ -14,10 +14,16 @@ import { GLOBAL } from "../../lib/variables";
     >
       {GLOBAL.username}
     </h1>
+    <br />
     <h2
       class="text-center text-xl sm:text-2xl font-mono font-medium sm:text-left"
     >
-      <p set:html={GLOBAL.shortDescription}/>
+      <p set:html={GLOBAL.shortDescription} />
+    </h2>
+    <h2
+      class="text-center text-xl sm:text-2xl font-mono font-normal sm:text-left"
+    >
+      <p set:html={GLOBAL.longDescription} />
     </h2>
   </div>
 </div>

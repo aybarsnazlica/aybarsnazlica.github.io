@@ -4,8 +4,8 @@ export const GLOBAL = {
   // Site metadata
   username: "Aybars Nazlica",
   rootUrl: "https://aybarsnazlica/github.io",
-  shortDescription: "Developer <br /> I develop apps for Apple platforms.",
-  longDescription: "",
+  shortDescription: "Software Developer",
+  longDescription: "I develop apps for Apple platforms",
 
   // Social media links
   githubProfile: "https://github.com/aybarsnazlica/",
@@ -28,7 +28,7 @@ export const GLOBAL = {
   // Project metadata
   projectTitle: "Projects and Code",
   projectShortDescription: "A list of my web development projects and developer tools.",
-  projectLongDescription: "All of my projects, including applications.",
+  projectLongDescription: "All of my projects including applications.",
 
   // Profile image
   profileImage: "profile.png",
