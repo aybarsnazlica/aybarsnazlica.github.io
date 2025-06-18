@@ -2,9 +2,9 @@
 layout: ../../layouts/ProjectLayout.astro
 title: Pixelate
 description: A command line application to apply pixelation effect on images.
-tags: ["swift", "metal", "cli"]
+tags: [ "cli", "macos", "swift", "metal"]
 githubUrl: https://github.com/aybarsnazlica/Pixelate
-timestamp: 2025-06-24T02:39:03+00:00
+timestamp: 2025-04-24T02:39:03+00:00
 featured: true
 filename: pixelate
 ---

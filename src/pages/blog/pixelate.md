@@ -5,8 +5,8 @@ description: HTML is the foundation of all websites. This guide will walk you th
 tags: ["code", "html"]
 time: 4
 featured: true
-timestamp: 2024-12-18T02:39:03+00:00
-filename: html-intro
+timestamp: 2025-05-18T02:39:03+00:00
+filename: pixelate
 ---
 
 HTML (HyperText Markup Language) is the foundation of all websites. Even with modern frameworks and tools, understanding HTML basics remains essential for web development. This guide will walk you through creating your first simple website using HTML.
