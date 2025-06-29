@@ -1,0 +1,143 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff 0%, #ff9587 100%);
+  color: #111;
+  line-height: 1.6;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-header {
+  background-color: transparent;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero {
+  padding: 4rem 0 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.apps {
+  padding: 2rem 0;
+}
+
+.app-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-card {
+  aspect-ratio: 1 / 1;
+  width: 80px;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.app-card img {
+  width: 96px;
+  height: 96px;
+  border-radius: 20%;
+  margin-bottom: 1rem;
+}
+
+.app-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #666;
+  padding: 2rem 0;
+  border-top: 2px solid #444;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.social li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #444;
+}
+
+.social li a:hover {
+  text-decoration: underline;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-footer {
+  margin-top: auto; /* push footer to bottom */
+}
+
+.app-post h1,
+.app-post h2,
+.app-post h3 {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.app-post p {
+  margin-bottom: 1rem;
+}
+
+.app-post img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.app-post ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
