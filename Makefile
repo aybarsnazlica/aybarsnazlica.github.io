@@ -17,5 +17,11 @@ $(OUTPUT_DIR)/%.html: $(CONTENT_DIR)/%.md $(TEMPLATE)
 	  --metadata title="$(shell basename $< .md | sed 's/^./\U&/')" \
 	  -o $@
 
+live:
+	live-server
+
+format:
+	npx prettier . --write
+
 clean:
 	rm -f $(OUTPUT_DIR)/*.html
