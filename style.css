@@ -1,12 +1,26 @@
 /* style.css */
 
 body {
+  position: relative;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: linear-gradient(to bottom, #ffffff 0%, #ff9587 100%);
+  background: linear-gradient(to bottom, #f9e7b3 0%, #ff9933 50%, #554686 100%);
   color: #111;
   line-height: 1.6;
+  overflow: hidden;
 }
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: url("asfalt-light.png");
+  background-size: cover;
+  opacity: 0.3;
+  z-index: 1;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -103,7 +117,7 @@ body {
 .social li a {
   font-size: 1rem;
   text-decoration: none;
-  color: #444;
+  color: #222;
 }
 
 .social li a:hover {
@@ -111,6 +125,8 @@ body {
 }
 
 .site-wrapper {
+  position: relative;
+  z-index: 2; /* ensures content sits above the grain */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
