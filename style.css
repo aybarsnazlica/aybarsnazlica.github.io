@@ -11,12 +11,14 @@ body {
 
 body::before {
   content: "";
-  position: fixed;
+  background-color: transparent;
+  position: absolute;
+  background-repeat: repeat;
   inset: 0;
   pointer-events: none;
-  background: url("asfalt-light.png");
-  background-size: cover;
-  opacity: 0.3;
+  background-image: url("noise.svg");
+  background-size: auto;
+  opacity: 0.4;
   z-index: 1;
 }
 
