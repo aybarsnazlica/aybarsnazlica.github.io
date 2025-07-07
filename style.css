@@ -4,21 +4,27 @@ body {
   position: relative;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: linear-gradient(
-    to bottom,
-    #f7f000,
-    #ffce00,
-    #ffac02,
-    #ff8a24,
-    #ff6938,
-    #fc5248,
-    #f53c58,
-    #ea2667,
-    #e5197d,
-    #db1a94,
-    #ca27ab,
-    #b138c1
+  background: hsla(186, 33%, 94%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
   );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
   color: #111;
   line-height: 1.6;
 }
