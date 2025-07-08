@@ -31,15 +31,17 @@ body {
 
 body::before {
   content: "";
-  background-color: transparent;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-repeat: repeat;
-  inset: 0;
-  pointer-events: none;
   background-image: url("noise.svg");
   background-size: auto;
+  pointer-events: none;
   opacity: 0.4;
-  z-index: 1;
+  z-index: 0;
 }
 
 .container {
@@ -144,7 +146,7 @@ body::before {
 
 .site-wrapper {
   position: relative;
-  z-index: 2; /* ensures content sits above the grain */
+  z-index: 1; /* ensures content sits above the grain */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
