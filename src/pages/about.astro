@@ -4,10 +4,7 @@ import Hero from "../components/Hero.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout
-	title="About | Aybars Nazlica"
-	description="About Aybars Nazlica"
->
+<BaseLayout title="About | Aybars Nazlica" description="About Aybars Nazlica">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -41,12 +38,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			<section>
 				<h2 class="section-title">Education</h2>
 				<div class="content">
-					<p>
+					<li>
 						Western University, Machine Learning for Health and
 						Biomedical Sciences, Canada
-					</p>
-					<p>Osaka University, Bioinformatics, Japan</p>
-					<p>Bulent Ecevit University, Medicine, Turkey</p>
+						<li>Osaka University, Bioinformatics, Japan</li>
+						<li>Bulent Ecevit University, Medicine, Turkey</li>
+					</li>
 				</div>
 			</section>
 		</main>
