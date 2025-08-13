@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # VS Code
 .vscode/
+
+# Astro references
+references/
