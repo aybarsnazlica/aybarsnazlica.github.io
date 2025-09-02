@@ -10,5 +10,11 @@
   },
   "dependencies": {
     "astro": "^5.12.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "eslint": "^9.34.0",
+    "globals": "^16.3.0",
+    "typescript-eslint": "^8.40.0"
   }
 }

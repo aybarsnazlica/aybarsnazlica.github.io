@@ -1,7 +1,7 @@
 ---
 title: Splay
 publishDate: 2025-08-13 00:00:00
-img: /assets/SplayIcon.png
+img: /assets/splay-icon.png
 img_alt: The macOS app icon for Splay
 description: |
   Splay is a lightweight macOS utility that randomly redistributes open windows across your screen.
