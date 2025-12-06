@@ -7,8 +7,10 @@ description: |
   A minimal iPad app for viewing photo references with grid for accurate drawing.
 tags:
   - iOS
+  - iPadOS
   - Swift
   - SwitUI
+  - UIKit
 ---
 
 SwiftUI iPad app for image reference with proportion grid and screen-on support.
