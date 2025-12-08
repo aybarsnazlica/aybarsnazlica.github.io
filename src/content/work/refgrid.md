@@ -2,15 +2,14 @@
 title: RefGrid
 publishDate: 2025-12-06 00:00:00
 img: /assets/sunrise_over_mountains.png
-img_alt: The iOS app icon for RefGrid
+img_alt: The app icon for RefGrid
 description: |
-  A minimal iPad app for viewing photo references with grid for accurate drawing.
+  A lightweight iPad reference viewer with grids and always-on display.
 tags:
   - iOS
-  - iPadOS
-  - Swift
   - SwitUI
   - UIKit
 ---
 
-SwiftUI iPad app for image reference with proportion grid and screen-on support.
+RefGrid is an iPad app for artists to view photo references with precise grid overlays—
+designed to stay on screen without constantly changing your auto-lock settings.
