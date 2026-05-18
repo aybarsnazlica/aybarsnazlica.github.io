@@ -1,0 +1,173 @@
+---
+import PinkyPlayground from "../../components/PinkyPlayground";
+import Layout from "../../layouts/Layout.astro";
+import { findProject } from "../../data/projects";
+
+const project = findProject("jpinky");
+const basePath = import.meta.env.BASE_URL;
+
+if (!project) {
+    throw new Error("Project not found: jpinky");
+}
+---
+
+<Layout title="jpinky | Aybars Nazlica" description={project.summary}>
+    <main class="project-page container">
+        <a class="back-link" href={basePath}>Back to portfolio</a>
+
+        <section class="project-hero">
+            <div>
+                <p class="eyebrow">Featured project</p>
+                <h1 class="section-title">{project.title}</h1>
+                <p class="section-copy">{project.summary}</p>
+            </div>
+
+            <div class="project-badge">
+                <span>{project.year}</span>
+                <span>{project.status}</span>
+            </div>
+        </section>
+
+        <section class="project-panels">
+            <article class="panel panel-primary">
+                <p class="eyebrow">Problem</p>
+                <p>{project.detail.problem}</p>
+            </article>
+
+            <article class="panel">
+                <p class="eyebrow">Stack</p>
+                <div class="tag-row">
+                    {
+                        project.stack.map((item) => (
+                            <span class="pill">{item}</span>
+                        ))
+                    }
+                </div>
+            </article>
+        </section>
+
+        <section class="detail-grid">
+            <article class="panel">
+                <p class="eyebrow">Implemented</p>
+                <ul>
+                    {project.detail.work.map((item) => <li>{item}</li>)}
+                </ul>
+            </article>
+
+            <article class="panel">
+                <p class="eyebrow">Next steps</p>
+                <ul>
+                    {project.detail.nextSteps.map((item) => <li>{item}</li>)}
+                </ul>
+            </article>
+        </section>
+
+        <section class="panel demo-panel">
+            <p class="eyebrow">Browser runner</p>
+            <PinkyPlayground client:load />
+        </section>
+    </main>
+</Layout>
+
+<style>
+    .project-page {
+        padding: 2.6rem 0 5rem;
+    }
+
+    .back-link {
+        display: inline-flex;
+        margin-bottom: 1.5rem;
+        color: var(--accent-strong);
+        font: 500 0.95rem/1 var(--font-mono);
+    }
+
+    .project-hero,
+    .project-panels,
+    .detail-grid {
+        display: grid;
+        gap: 1.2rem;
+    }
+
+    .project-hero,
+    .project-panels {
+        grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+    }
+
+    .project-hero {
+        align-items: end;
+        margin-bottom: 1.2rem;
+    }
+
+    .project-badge,
+    .panel {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background: var(--surface);
+        box-shadow: var(--shadow);
+    }
+
+    .project-badge {
+        display: grid;
+        gap: 0.9rem;
+        padding: 1.6rem;
+        align-self: stretch;
+        font-family: var(--font-mono);
+        color: var(--accent-strong);
+    }
+
+    .panel {
+        padding: 1.7rem;
+    }
+
+    .panel p,
+    .panel li {
+        color: var(--muted);
+        line-height: 1.75;
+    }
+
+    .panel-primary {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255, 248, 241, 0.98),
+                rgba(255, 244, 235, 0.9)
+            ),
+            linear-gradient(
+                135deg,
+                rgba(182, 84, 43, 0.08),
+                rgba(35, 103, 125, 0.08)
+            );
+    }
+
+    .tag-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+
+    .detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 1.2rem;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 1.1rem;
+    }
+
+    li + li {
+        margin-top: 0.6rem;
+    }
+
+    .demo-panel {
+        margin-top: 1.2rem;
+    }
+
+    @media (max-width: 900px) {
+        .project-hero,
+        .project-panels,
+        .detail-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

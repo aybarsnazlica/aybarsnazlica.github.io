@@ -1,0 +1,103 @@
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    grid-column: span 6;
+    flex-direction: column;
+    min-height: 23rem;
+    padding: 1.6rem;
+    border: 1px solid rgba(26, 36, 51, 0.12);
+    border-radius: 28px;
+    background: rgba(255, 250, 242, 0.82);
+    box-shadow: 0 24px 80px rgba(35, 29, 24, 0.12);
+    overflow: hidden;
+    isolation: isolate;
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease,
+        border-color 180ms ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(182, 84, 43, 0.35);
+    box-shadow: 0 26px 90px rgba(35, 29, 24, 0.16);
+}
+
+.project-card__glow {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 0.55rem;
+}
+
+.project-card__meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: #7d2d18;
+    font: 500 0.78rem/1 'IBM Plex Mono', 'SFMono-Regular', monospace;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.project-card h3 {
+    margin: 1.3rem 0 0;
+    font: 700 clamp(1.7rem, 4vw, 2.5rem)/0.95 'Space Grotesk', 'Avenir Next', 'Segoe UI', sans-serif;
+    letter-spacing: -0.04em;
+}
+
+.project-card p {
+    margin: 1rem 0 0;
+    max-width: 52ch;
+    color: #5b6574;
+    line-height: 1.75;
+}
+
+.project-card__stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin: auto 0 0;
+    padding: 1.5rem 0 0;
+    list-style: none;
+}
+
+.project-card__stack li {
+    padding: 0.55rem 0.8rem;
+    border: 1px solid rgba(26, 36, 51, 0.12);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+.project-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: 1.5rem;
+    color: #1a2433;
+    font-weight: 600;
+}
+
+.project-card__cta::after {
+    content: '→';
+    transform: translateX(0);
+    transition: transform 180ms ease;
+}
+
+.project-card:hover .project-card__cta::after {
+    transform: translateX(4px);
+}
+
+@media (max-width: 900px) {
+    .project-card {
+        grid-column: span 12;
+    }
+}
