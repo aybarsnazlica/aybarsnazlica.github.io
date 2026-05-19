@@ -11,73 +11,40 @@ const basePath = import.meta.env.BASE_URL;
 	description="Portfolio site featuring language tooling, systems experiments, and product-minded engineering work."
 >
 	<main>
-		<section class="hero container">
+		<section class="hero">
 			<div class="hero-copy">
 				<p class="eyebrow">Software Engineer</p>
 				<h1 class="section-title">
-					I build language tools, sharp interfaces, and software with
-					an opinion.
+					I work on backend systems, data platforms, and small tools
+					that make technical work easier.
 				</h1>
 				<p class="hero-text">
-					This portfolio is a home for projects that balance
-					engineering depth with product quality. The current focus is
-					jpinky, a small interpreted language built in Java and now
-					being shaped for a browser-based playground.
+					Most of my work is in infrastructure: APIs, pipelines,
+					orchestration, and data systems. I currently work across
+					backend engineering, data, and machine learning workflows. This site is a
+					collection of my personal projects.
 				</p>
 				<div class="hero-actions">
 					<a class="button button-primary" href="#projects"
 						>View projects</a
 					>
-					<a
-						class="button button-secondary"
-						href={`${basePath}projects/jpinky`}>See jpinky</a
-					>
 				</div>
 			</div>
-
-			<aside class="hero-panel">
-				<div class="hero-panel-frame">
-					<p class="eyebrow">Current build</p>
-					<div class="terminal-line">
-						<span class="prompt">project</span>
-						<span>jpinky</span>
-					</div>
-					<div class="terminal-line muted">
-						<span class="prompt">stack</span>
-						<span>Java, Gradle, Astro, React</span>
-					</div>
-					<div class="terminal-line muted">
-						<span class="prompt">next</span>
-						<span>Browser runner, project writeup, demo UI</span>
-					</div>
-				</div>
-			</aside>
-		</section>
-
-		<section class="highlights container">
-			<div class="pill">Language implementation</div>
-			<div class="pill">Developer tooling</div>
-			<div class="pill">Frontend delivery</div>
 		</section>
 
 		<section class="projects container" id="projects">
 			<div class="section-header">
 				<div>
 					<p class="eyebrow">Featured work</p>
-					<h2 class="section-title">
-						Projects with enough substance to deserve their own
-						page.
-					</h2>
 				</div>
-				<p class="section-copy">
-					The portfolio structure is data-driven, so adding future
-					work means appending a project entry and creating a
-					dedicated page when the project earns one.
-				</p>
 			</div>
 
 			<ProjectGrid client:load projects={featuredProjects} />
 		</section>
+
+		<footer class="page-footer container">
+			<p>Aybars Nazlica &copy; 2026</p>
+		</footer>
 	</main>
 </Layout>
 
@@ -88,9 +55,11 @@ const basePath = import.meta.env.BASE_URL;
 
 	.hero {
 		display: grid;
-		grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.9fr);
-		gap: 1.5rem;
-		align-items: stretch;
+		grid-template-columns:
+			minmax(1rem, 1fr)
+			minmax(0, 1120px)
+			minmax(0, 240px)
+			minmax(1rem, 1fr);
 		padding-top: 2.75rem;
 	}
 
@@ -104,6 +73,7 @@ const basePath = import.meta.env.BASE_URL;
 	}
 
 	.hero-copy {
+		grid-column: 2 / 4;
 		padding: clamp(1.6rem, 4vw, 3.4rem);
 	}
 
@@ -175,9 +145,20 @@ const basePath = import.meta.env.BASE_URL;
 		padding-top: 4.6rem;
 	}
 
+	.page-footer {
+		padding-top: 10rem;
+		text-align: center;
+		color: var(--muted);
+		font: 500 0.9rem/1.6 var(--font-mono);
+	}
+
+	.page-footer p {
+		margin: 0;
+	}
+
 	.section-header {
 		display: grid;
-		grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+		grid-template-columns: 1fr;
 		gap: 1.5rem;
 		align-items: end;
 		margin-bottom: 1.6rem;
@@ -187,6 +168,11 @@ const basePath = import.meta.env.BASE_URL;
 		.hero,
 		.section-header {
 			grid-template-columns: 1fr;
+		}
+
+		.hero-copy {
+			grid-column: auto;
+			margin: 0 1rem;
 		}
 	}
 

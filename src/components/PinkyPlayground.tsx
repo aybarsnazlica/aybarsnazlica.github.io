@@ -62,7 +62,7 @@ export default function PinkyPlayground() {
                     <h2 className="playground__title">The sample program runs in the browser through TeaVM.</h2>
                 </div>
                 <button className="button button-primary" type="button" onClick={() => void runProgram(source)} disabled={busy}>
-                    {busy ? 'Running...' : 'Run jpinky'}
+                    {busy ? 'Running...' : 'Run'}
                 </button>
             </div>
 

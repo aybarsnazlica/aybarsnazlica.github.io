@@ -20,6 +20,10 @@
     align-items: end;
 }
 
+.playground__header .button {
+    font-size: 1rem;
+}
+
 .playground__title {
     margin: 0;
     font: 700 clamp(1.6rem, 3vw, 2.4rem)/1 var(--font-display);
