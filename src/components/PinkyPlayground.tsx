@@ -28,6 +28,10 @@ export default function PinkyPlayground() {
     const [busy, setBusy] = useState(false);
     const [runtimeError, setRuntimeError] = useState<string | null>(null);
 
+    const output = result?.success ? result.output : result?.errorMessage || 'Loading runtime...';
+    const svgMarkup = result?.success ? getSvgMarkup(result.output) : null;
+    const svgPreviewSrc = svgMarkup ? `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgMarkup)}` : null;
+
     const runProgram = useEffectEvent(async (nextSource: string) => {
         setBusy(true);
         setRuntimeError(null);
@@ -74,7 +78,7 @@ export default function PinkyPlayground() {
 
                 <div className="playground__panel playground__panel--output">
                     <span className="playground__label">Output</span>
-                    {runtimeError ? <pre>{runtimeError}</pre> : <pre>{result?.success ? result.output || '(no output)' : result?.errorMessage || 'Loading runtime...'}</pre>}
+                    {runtimeError ? <pre>{runtimeError}</pre> : svgPreviewSrc ? <div className="playground__preview"><img src={svgPreviewSrc} alt="Program SVG output" /></div> : <pre>{output || '(no output)'}</pre>}
                     {result && !result.success ? <p className="playground__error">{result.errorType} error on line {result.errorLine}</p> : null}
                 </div>
             </div>
@@ -91,4 +95,14 @@ export default function PinkyPlayground() {
             </div>
         </section>
     );
+}
+
+function getSvgMarkup(output: string) {
+    const trimmedOutput = output.trim();
+
+    if (!trimmedOutput.startsWith('<svg') || !trimmedOutput.endsWith('</svg>')) {
+        return null;
+    }
+
+    return trimmedOutput;
 }

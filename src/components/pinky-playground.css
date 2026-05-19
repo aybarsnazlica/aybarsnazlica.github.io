@@ -64,6 +64,23 @@
     overflow: auto;
 }
 
+.playground__preview {
+    display: grid;
+    place-items: center;
+    min-height: 17rem;
+    padding: 1rem;
+    border: 1px solid rgba(26, 36, 51, 0.12);
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.56);
+    overflow: auto;
+}
+
+.playground__preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .playground textarea {
     width: 100%;
     resize: vertical;
