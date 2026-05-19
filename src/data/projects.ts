@@ -8,7 +8,6 @@ export type Project = {
     accent: string;
     href: string;
     link?: string;
-    detail: {};
 };
 
 export const featuredProjects: Project[] = [
@@ -23,7 +22,6 @@ export const featuredProjects: Project[] = [
         accent: 'linear-gradient(135deg, #b6542b 0%, #23677d 100%)',
         href: '/projects/jpinky',
         link: 'https://github.com/aybarsnazlica/jpinky',
-        detail: {},
     },
 ];
 

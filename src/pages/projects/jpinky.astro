@@ -83,8 +83,7 @@ if (!project) {
     }
 
     .project-hero,
-    .project-panels,
-    .detail-grid {
+    .project-panels {
         display: grid;
         gap: 1.2rem;
     }
@@ -97,10 +96,6 @@ if (!project) {
     .project-hero {
         align-items: end;
         margin-bottom: 1.2rem;
-    }
-
-    .project-hero .section-copy {
-        margin-top: 0.9rem;
     }
 
     .project-badge,
@@ -168,11 +163,6 @@ if (!project) {
         gap: 0.8rem;
     }
 
-    .detail-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        margin-top: 1.2rem;
-    }
-
     ul {
         margin: 0;
         padding-left: 1.1rem;
@@ -188,8 +178,7 @@ if (!project) {
 
     @media (max-width: 900px) {
         .project-hero,
-        .project-panels,
-        .detail-grid {
+        .project-panels {
             grid-template-columns: 1fr;
         }
     }

@@ -2,8 +2,6 @@
 import ProjectGrid from "../components/ProjectGrid";
 import Layout from "../layouts/Layout.astro";
 import { featuredProjects } from "../data/projects";
-
-const basePath = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -21,8 +19,8 @@ const basePath = import.meta.env.BASE_URL;
 				<p class="hero-text">
 					Most of my work is in infrastructure: APIs, pipelines,
 					orchestration, and data systems. I currently work across
-					backend engineering, data, and machine learning workflows. This site is a
-					collection of my personal projects.
+					backend engineering, data, and machine learning workflows.
+					This site is a collection of my personal projects.
 				</p>
 				<div class="hero-actions">
 					<a class="button button-primary" href="#projects"
@@ -63,8 +61,7 @@ const basePath = import.meta.env.BASE_URL;
 		padding-top: 2.75rem;
 	}
 
-	.hero-copy,
-	.hero-panel-frame {
+	.hero-copy {
 		border: 1px solid var(--line);
 		border-radius: var(--radius-xl);
 		background: var(--surface);
@@ -92,53 +89,12 @@ const basePath = import.meta.env.BASE_URL;
 		margin-top: 2rem;
 	}
 
-	.hero-panel {
-		display: flex;
-	}
-
-	.hero-panel-frame {
-		width: 100%;
-		padding: 1.5rem;
-		background:
-			linear-gradient(
-				180deg,
-				rgba(255, 248, 238, 0.96),
-				rgba(249, 241, 232, 0.9)
-			),
-			linear-gradient(
-				135deg,
-				rgba(182, 84, 43, 0.06),
-				rgba(35, 103, 125, 0.08)
-			);
-	}
-
-	.terminal-line {
-		display: grid;
-		grid-template-columns: 5.5rem 1fr;
-		gap: 0.9rem;
-		padding: 1rem 0;
-		border-bottom: 1px solid var(--line);
-		font-family: var(--font-mono);
-		font-size: 0.94rem;
-	}
-
-	.terminal-line:last-child {
-		border-bottom: 0;
-	}
-
 	.prompt {
 		color: var(--accent-strong);
 	}
 
 	.muted {
 		color: var(--muted);
-	}
-
-	.highlights {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.85rem;
-		padding: 1.25rem 0 0;
 	}
 
 	.projects {
@@ -181,8 +137,7 @@ const basePath = import.meta.env.BASE_URL;
 			padding-top: 1rem;
 		}
 
-		.hero-copy,
-		.hero-panel-frame {
+		.hero-copy {
 			border-radius: 24px;
 		}
 	}
