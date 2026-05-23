@@ -167,6 +167,11 @@ export default function PinkyPlayground() {
                             }}
                         />
                     </div>
+                    <div className="playground__actions">
+                        <button className="button button-secondary playground__clear-button" type="button" onClick={() => setSource('')} disabled={!source}>
+                            Clear
+                        </button>
+                    </div>
                 </div>
 
                 <div className="playground__panel playground__panel--output">
