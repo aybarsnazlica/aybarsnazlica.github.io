@@ -15,7 +15,7 @@ export const featuredProjects: Project[] = [
         slug: 'jpinky',
         title: 'jpinky',
         summary:
-            'A small interpreted language implemented in Java, with a lexer, parser, AST model, and tree-walking interpreter. This is a browser-hosted playground backed by the same core runtime.',
+            'jpinky is a tree-walking interpreter for the toy programming language Pinky. It is implemented in Java and includes a lexer, parser, AST model, and more. This is a browser-hosted playground backed by the same core runtime.',
         year: '2026',
         status: 'Active',
         stack: ['Java', 'Gradle', 'Astro', 'React'],
