@@ -1,5 +1,7 @@
+import Editor from '@monaco-editor/react';
 import { startTransition, useEffect, useEffectEvent, useState } from 'react';
 import './pinky-playground.css';
+import { configurePinkyMonaco, pinkyLanguageId, pinkyThemeId } from './pinkyMonaco';
 
 type RunResult = {
     success: boolean;
@@ -121,6 +123,11 @@ export default function PinkyPlayground() {
         void runProgram(SAMPLE_PROGRAM);
     }, []);
 
+    const handleEditorMount = useEffectEvent((editor, monaco) => {
+        configurePinkyMonaco(monaco);
+        editor.updateOptions({ tabSize: 4 });
+    });
+
     return (
         <section className="playground">
             <div className="playground__header">
@@ -134,10 +141,33 @@ export default function PinkyPlayground() {
             </div>
 
             <div className="playground__grid">
-                <label className="playground__panel">
+                <div className="playground__panel">
                     <span className="playground__label">Source</span>
-                    <textarea value={source} onChange={(event) => setSource(event.target.value)} spellCheck={false} />
-                </label>
+                    <div className="playground__editor">
+                        <Editor
+                            defaultLanguage={pinkyLanguageId}
+                            defaultValue={SAMPLE_PROGRAM}
+                            language={pinkyLanguageId}
+                            theme={pinkyThemeId}
+                            value={source}
+                            beforeMount={configurePinkyMonaco}
+                            onMount={handleEditorMount}
+                            onChange={(value) => setSource(value ?? '')}
+                            options={{
+                                automaticLayout: true,
+                                fontFamily: 'var(--font-mono)',
+                                fontLigatures: false,
+                                fontSize: 15,
+                                lineNumbersMinChars: 3,
+                                minimap: { enabled: false },
+                                padding: { top: 16, bottom: 16 },
+                                scrollBeyondLastLine: false,
+                                tabSize: 4,
+                                wordWrap: 'off',
+                            }}
+                        />
+                    </div>
+                </div>
 
                 <div className="playground__panel playground__panel--output">
                     <span className="playground__label">Output</span>

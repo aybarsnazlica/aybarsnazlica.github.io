@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "@astrojs/react": "^5.0.5",
+    "@monaco-editor/react": "^4.7.0",
     "astro": "^6.3.4",
+    "monaco-editor": "^0.55.1",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   }

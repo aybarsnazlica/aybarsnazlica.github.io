@@ -47,18 +47,30 @@
     text-transform: uppercase;
 }
 
-.playground textarea,
+.playground__editor,
 .playground pre {
     margin: 0;
     min-height: 17rem;
-    padding: 1rem;
     border: 1px solid rgba(26, 36, 51, 0.12);
     border-radius: var(--radius-md);
     background: rgba(255, 255, 255, 0.56);
+    overflow: auto;
+}
+
+.playground__editor {
+    padding: 0;
+    overflow: hidden;
+}
+
+.playground__editor>div {
+    min-height: 17rem;
+}
+
+.playground pre {
+    padding: 1rem;
     color: var(--text);
     font: 400 0.95rem/1.6 var(--font-mono);
     white-space: pre-wrap;
-    overflow: auto;
 }
 
 .playground__preview {
@@ -76,11 +88,6 @@
     display: block;
     width: 100%;
     height: auto;
-}
-
-.playground textarea {
-    width: 100%;
-    resize: vertical;
 }
 
 .playground__error {
