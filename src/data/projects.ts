@@ -18,7 +18,7 @@ export const featuredProjects: Project[] = [
             'jpinky is a tree-walking interpreter for the toy programming language Pinky. It is implemented in Java and includes a lexer, parser, AST model, and more. This is a browser-hosted playground backed by the same core runtime.',
         year: '2026',
         status: 'Active',
-        stack: ['Java', 'Gradle', 'Astro', 'React'],
+        stack: ['Java', 'TypeScript', 'Astro', 'React'],
         accent: 'linear-gradient(135deg, #b6542b 0%, #23677d 100%)',
         href: '/projects/jpinky',
         link: 'https://github.com/aybarsnazlica/jpinky',
