@@ -8,6 +8,8 @@ on:
 env:
   JPINKY_REPOSITORY: aybarsnazlica/jpinky
   JPINKY_REF: main
+  TSPINKY_REPOSITORY: aybarsnazlica/tspinky
+  TSPINKY_REF: main
 
 permissions:
   contents: read
@@ -25,6 +27,13 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
+
+      - name: Check out tspinky source
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ env.TSPINKY_REPOSITORY }}
+          ref: ${{ env.TSPINKY_REF }}
+          path: tspinky
 
       - name: Check out jpinky runtime source
         uses: actions/checkout@v6
@@ -44,12 +53,25 @@ jobs:
         with:
           node-version: '22'
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: |
+            package-lock.json
+            tspinky/package-lock.json
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v6
         with:
           cache-provider: basic
+
+      - name: Install tspinky dependencies
+        working-directory: tspinky
+        run: npm ci
+
+      - name: Build tspinky package
+        working-directory: tspinky
+        run: npm run build
+
+      - name: Link tspinky as sibling workspace dependency
+        run: ln -sfn "$GITHUB_WORKSPACE/tspinky" ../tspinky
 
       - name: Install site dependencies
         run: npm ci

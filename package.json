@@ -17,6 +17,7 @@
     "astro": "^6.3.4",
     "monaco-editor": "^0.55.1",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "tspinky": "file:../tspinky"
   }
 }

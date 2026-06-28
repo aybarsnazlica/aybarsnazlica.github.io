@@ -23,6 +23,17 @@ export const featuredProjects: Project[] = [
         href: '/projects/jpinky',
         link: 'https://github.com/aybarsnazlica/jpinky',
     },
+    {
+        slug: 'tspinky',
+        title: 'tspinky',
+        summary:
+            'tspinky is an idiomatic TypeScript port of the Pinky tree-walking interpreter. It keeps the same lexer, parser, AST, and runtime behavior as jpinky while running directly in the browser through the site bundle.',
+        year: '2026',
+        status: 'Active',
+        stack: ['TypeScript', 'Astro', 'React', 'Monaco'],
+        accent: 'linear-gradient(135deg, #23677d 0%, #b6542b 100%)',
+        href: '/projects/tspinky',
+    },
 ];
 
 export function findProject(slug: string) {
