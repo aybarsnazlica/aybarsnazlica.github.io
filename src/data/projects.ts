@@ -27,12 +27,13 @@ export const featuredProjects: Project[] = [
         slug: 'tspinky',
         title: 'tspinky',
         summary:
-            'tspinky is an idiomatic TypeScript port of the Pinky tree-walking interpreter. It keeps the same lexer, parser, AST, and runtime behavior as jpinky while running directly in the browser through the site bundle.',
+            'tspinky is a tree-walking interpreter for the toy programming language Pinky. It is written in TypeScript and includes a lexer, parser, AST, and more. It runs directly in the browser through the site bundle.',
         year: '2026',
         status: 'Active',
-        stack: ['TypeScript', 'Astro', 'React', 'Monaco'],
+        stack: ['TypeScript', 'Astro', 'React',],
         accent: 'linear-gradient(135deg, #23677d 0%, #b6542b 100%)',
         href: '/projects/tspinky',
+        link: 'https://github.com/aybarsnazlica/tspinky',
     },
 ];
 
